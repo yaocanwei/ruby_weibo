@@ -1,0 +1,30 @@
+<% provide(:title, '主页') %>
+<div class="hidden-phone">
+	<ul class="breadcrumb">
+		<li><%=link_to "Home", '#' %><span class="divider">/</span></li>
+		<li><%=link_to "首页", '#' %></li>
+	</ul>
+</div>
+
+<div id="main" class="container-fluid">
+	<div class="box" style="text-align:center">
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!--- 显示图片 ------>
+			<div class="carousel-inner">
+				<div class="active item"><%= image_tag "1.jpg", width: "940px", height: "320px" %></div>
+				<div class="item"><%= image_tag "2.jpg", width: "940px", height: "320px" %></div>
+				<div class="item"><%= image_tag "3.jpg", width: "940px", height: "320px" %></div>
+			</div>
+			<!-- 导航 --->
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+		</div>
+	</div>
+</div>
+
+
